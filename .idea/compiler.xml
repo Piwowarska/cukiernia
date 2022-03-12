@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="2-logowanie" />
+        <module name="03.01.2022-sql" />
+        <module name="25.02.2022" />
+        <module name="17.01.2022-hibernate" />
+        <module name="24.02.2022" />
+        <module name="23.02.2022" />
+        <module name="26.02.2022-dzodatki" />
+        <module name="27.02.2022-git" />
+        <module name="cake" />
+        <module name="17.02.2022" />
+        <module name="projekt1" />
+        <module name="26.02.2022" />
+        <module name="wyporzyczalnia" />
+        <module name="16.01.2022-hibernate" />
+        <module name="06.03.2022" />
+        <module name="27.02.2022" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="03.01.2022-sql" options="-parameters" />
+      <module name="06.03.2022" options="-parameters" />
+      <module name="16.01.2022-hibernate" options="-parameters" />
+      <module name="17.01.2022-hibernate" options="-parameters" />
+      <module name="17.02.2022" options="-parameters" />
+      <module name="2-logowanie" options="-parameters" />
+      <module name="23.02.2022" options="-parameters" />
+      <module name="24.02.2022" options="-parameters" />
+      <module name="25.02.2022" options="-parameters" />
+      <module name="26.02.2022" options="-parameters" />
+      <module name="26.02.2022-dzodatki" options="-parameters" />
+      <module name="27.02.2022" options="-parameters" />
+      <module name="27.02.2022-git" options="-parameters" />
+      <module name="cake" options="-parameters" />
+      <module name="projekt1" options="-parameters" />
+      <module name="wyporzyczalnia" options="-parameters" />
+    </option>
+  </component>
+</project>

@@ -1,0 +1,39 @@
+.cake {
+    border: 1px solid black;
+    border-radius: 0px;
+    width: 100%;
+    text-align: left;
+    padding: 10px;
+    margin: 15px 0;
+    transition: border, background 0.5s;
+    cursor: pointer;
+}
+
+.cake:hover {
+    border: 1px solid pink;
+    background: #ffd4d4;
+}
+
+.cake .title {
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.cake .price {
+    display: inline-block;
+    font-size: 25px;
+}
+
+
+.cake .quantity {
+    display: inline-block;
+    margin-left: 400px;
+    font-size: 25px;
+}
+
+.cake .cart-button {
+    display: inline-block;
+    margin-left: 1200px;
+    font-size: 26px;
+}
+

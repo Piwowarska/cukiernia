@@ -1,0 +1,36 @@
+.order {
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 10px;
+    transition: border 0.5s;
+    margin: 10px 0;
+}
+
+.order:hover {
+    border: 1px solid red;
+}
+
+.order .id {
+    display: inline-block;
+    width: 32%;
+}
+
+.order .status {
+    display: inline-block;
+    width: 32%;
+}
+
+.order .sum {
+    display: inline-block;
+    width: 32%;
+}
+
+.positions {
+    display: none;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.order:hover > .positions {
+    display: block;
+}

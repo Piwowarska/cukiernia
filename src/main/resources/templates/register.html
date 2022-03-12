@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="httt://www.thymeleaf.orh">
+<head>
+    <meta charset="UTF-8">
+    <title>Cukiernia</title>
+    <link rel="stylesheet" href="/cssmain.css"/>
+    <link rel="stylesheet" href="/login.css"/>
+</head>
+<body>
+<div th:replace="fragments.html :: logo"></div>
+<div th:replace="fragments.html :: menu"></div>
+
+<div id="content">
+    <form id="login-form" method="post">
+        <input type="text" placeholder="Imie" th:field="*{registerUser.name}">
+        <br>
+        <input type="text"placeholder="nazwisko" th:field="*{registerUser.surname}">
+        <br>
+        <input type="text" placeholder="Login" th:field="*{registerUser.login}">
+        <br>
+        <input type="password" placeholder="Hasło" th:field="*{registerUser.password}">
+        <br>
+        <input type="password" placeholder="Powtórz hasło" th:field="*{registerUser.password2}">
+        <br>
+        <input type="text" placeholder="Mail" th:field="*{registerUser.mail}">
+        <br>
+        <input type="submit" value="Zapisz">
+    </form>
+  </div>
+</body>
+</html>

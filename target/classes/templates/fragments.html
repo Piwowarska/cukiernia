@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="httt://www.thymeleaf.orh">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<a href="/main" id="logo" th:fragment="logo">
+    <img src="/ROSARIO.jpg">
+</a>
+<div id="menu" th:fragment="menu">
+    <a href="/main">Main</a>
+    <a href="/contact">Kontakt</a>
+    <a href="/cart" th:if="${logged==true}">Koszyk</a>
+    <a href="/order/all" th:if="${logged==true}">Zamówienia</a>
+    <a href="/login" th:if="${logged==false}">Zaloguj</a>
+    <a href="/logout" th:if="${logged==true}">Wyloguj</a>
+</div>
+</body>
+</html>

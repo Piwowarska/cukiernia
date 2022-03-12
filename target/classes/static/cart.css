@@ -1,0 +1,33 @@
+.position {
+    width: 100%;
+    font-size: 17px;
+    margin: 10px 0;
+    border: 1px solid black;
+    border-radius: 10px;
+    transition: border 0.5s;
+}
+
+.position:hover {
+    border: 1px solid red;
+}
+
+.position .title {
+    display: inline-block;
+    width: 55%;
+}
+
+
+.position .quantity {
+    display: inline-block;
+    width: 6%;
+}
+
+.position .price {
+    display: inline-block;
+    width: 6%;
+}
+
+.position .position-sum {
+    display: inline-block;
+    width: 6%;
+}

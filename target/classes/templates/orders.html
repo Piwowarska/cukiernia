@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="httt://www.thymeleaf.orh">
+<head>
+    <meta charset="UTF-8">
+    <title>Cukiernia</title>
+    <link rel="stylesheet" href="/cssmain.css"/>
+    <link rel="stylesheet" href="/orders.css"/>
+    <link rel="stylesheet" href="/cart.css"/>
+</head>
+<body>
+<div th:replace="fragments.html :: logo"></div>
+<div th:replace="fragments.html :: menu"></div>
+
+<div id="content">
+    <div th:if="${orders.isEmpty()}">Brak zamówienia</div>
+    <div class="order" th:if="${!orders.isEmpty()}">
+        <div class="id"></div>
+        <div class="status">STATUS</div>
+        <div class="sum">KWOTA</div>
+    </div>
+    <div th:each="order : ${orders}" class="order">
+        <div th:text="${order.id}" class="id"></div>
+        <div th:text="${order.status}"class="status"></div>
+        <div th:text="${order.calculateSum()}" class="sum"></div>
+        <div class="positions">
+            <div class="position">
+                <div class="title">Tytół</div>
+                <div class="price">Cena Jednostkowa</div>
+                <div class="quantity">Ilośc</div>
+                <div class="sum">Cena</div>
+            </div>
+            <div th:each="position : ${order.orderPositions}" class="position">
+                <div th:text="${position.cake.title}" class="title"></div>
+                <div th:text="${position.cake.price}" class="price"></div>
+                <div th:text="${position.possitionQuantity}" class="quantity"></div>
+                <div th:text="${position.possitionQuantity*position.cake.price}" class="sum"></div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
